@@ -1,0 +1,47 @@
+//  =====================================================
+//  HTML Living Standard
+//  Sections elements
+//  https://html.spec.whatwg.org/multipage/sections.html
+//  body, article, section, nav, aside, hgroup, header, footer, address
+//  ======================================================
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  color: var(--ucla-black-80);
+  background: linear-gradient(180deg, #2D9CDB 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #47C0EC 0%, #1975C5 100%);
+  font-family: var(--ucla-font-family);
+  font-size: var(--ucla-font-size);
+  line-height: var(--ucla-line-height-text);
+  margin: var(--ucla-spacing-x-large) 0;
+  width: 100vw;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+main,
+header,
+footer,
+aside {}
+
+footer {
+  min-height: 10vh;
+  background: linear-gradient(180deg, #AE946B 0%, #695019 100%);
+}
+
+footer img {
+  margin: auto;
+  transform: translateY(-220px);
+}
+
+// Natural flow and rhythm in articles by default 
+article > * + * {
+  margin-top: 1em;
+}

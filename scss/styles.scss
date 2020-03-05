@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// UTILITIES
+@import "utilities/custom-properties";
+@import "utilities/colors"; // sass colors
+@import "utilities/variables"; // sass variables
+
+// BASE STYLES
+@import "base/01-sections";
+@import "base/02-headings";
+@import "base/03-grouping";
+@import "base/04-text-level";
+@import "base/05-embedded";
+@import "base/06-tables";
+@import "base/07-forms";
+@import "base/08-interactive";
+
+
+// COMPONENTS
+@import "components/typography";
+@import "components/stats";
+
+// LAYOUTS
+@import "layouts/grids";
+@import "layouts/print";
